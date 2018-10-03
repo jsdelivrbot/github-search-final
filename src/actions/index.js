@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = 'API_KEY_GITHUB';
+const API_KEY = process.env.API_KEY;
 
 export const FETCH_USERS = 'FETCH_USERS';
 
@@ -13,8 +13,9 @@ export function fetchUsers(username) {
 
     const request = github.get(`/search/users?per_page=42&page=1&q=${username}`);
 
-    return {
-        type: FETCH_USERS,
-        payload: request
+    return (dispatch) => {
+        request.then(({data}) => {
+            dispatch({ type: FETCH_USERS, payload: data })
+        });
     };
 }

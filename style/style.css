@@ -29,5 +29,18 @@ body {
 }
 
 .search-bar > input#search-input {
-    width: 75%;
+    width: 92%;
+}
+
+.user-list {
+    margin-top: 2rem;
+}
+
+.img-thumbnail {
+    width: 3rem;
+}
+
+.username {
+    padding-left: 1rem;
+    display: inline-block;
 }
