@@ -13,6 +13,8 @@ html {
 
 body {
     font-family: "Lato", sans-serif;
+    height: 100%;
+    margin: 0;
     font-weight: 400;
     line-height: 1.7;
     padding: 3rem;
@@ -20,7 +22,8 @@ body {
         to right bottom,
         rgb(21, 50, 180,0.85),
         rgb(40, 143, 228,0.85));
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     box-sizing: border-box;
 }
 
@@ -34,6 +37,7 @@ body {
 
 .user-list {
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .img-thumbnail {
