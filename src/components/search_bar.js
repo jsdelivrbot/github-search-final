@@ -33,6 +33,7 @@ class SearchBar extends Component {
                     id="search-input" 
                     value={this.state.term} 
                     onChange={this.onInputChange}
+                    placeholder="Search for a git username e.g twilink,simon, etc."
                 />
                 <button className="form-control btn btn-success">Search</button>
             </form>
