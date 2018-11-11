@@ -16,11 +16,14 @@ class UserList extends Component {
     }
     
     render(){
+        // if(users.loading){
+        //     return <h1>Loading.....</h1>;
+        // }
 
         return(
             <div className="user-list">
                 <ul className="list-group">
-                    {this.props.users.map(this.renderUsers)}
+                    {this.props.users.payload.map(this.renderUsers)}
                 </ul>
             </div>
         );
